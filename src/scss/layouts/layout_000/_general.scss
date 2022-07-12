@@ -13,6 +13,7 @@
 
 html {
   font-size: $baseFontSize;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,4 +23,52 @@ body {
 
 h1 {
   font-weight: $mediumFontWeight;
+}
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.info{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title{
+  font-family: 'Bad Script';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: $orange;
+  margin-bottom: 16px;
+}
+.subtitle{
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: $brown;
 }

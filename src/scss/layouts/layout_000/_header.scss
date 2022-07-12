@@ -1,0 +1,66 @@
+.header{
+  background-image: url(../../../i/header__bg.jpg);
+  background-color: #CCD2DE;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 100vh; /* You must set a specified height */
+  margin-bottom: 100px;
+  &__box{
+    background: rgba(99, 81, 101, 0.2);
+    width: 100%;
+    margin-bottom: 180px;
+  }
+  &__container{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo{
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  &__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 7rem;
+    line-height: 8rem;
+    color: $orange;
+  }
+  &__text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: $brown;
+  }
+}
+.nav{
+  &__list {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+  }
+  &__link {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+  &__link:hover{
+    color: $brown;
+    text-decoration: underline;
+  }
+  &__item {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right: 30px; /*Добавляем отступ у пунктов меню*/
+  }
+  &__item:last-child{
+    margin-right: 0;
+  }
+}
+
