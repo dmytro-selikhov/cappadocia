@@ -3,7 +3,7 @@ $(document).ready(function(){
     arrows:true, // Стрелки по бокам
     dots:true, // Точки
     adaptiveHeight:true, // Адаптивная высота каждого слайда
-    slidesToShow:1, // Количество слайдов на странице
+    slidesToShow:2, // Количество слайдов на странице
     slidesToScroll:1, // Количество слайдов для прокрутки
     speed:1000, //Скорость прокрутки слайдов
     easing:'liner', // Тип анимации при смене слайда
@@ -16,7 +16,7 @@ $(document).ready(function(){
     pauseOnDotsHover:true, // Пауза при наведении на дот
     draggable: true, // Свайп параметр, работает на пк
     swipe: true, // Свайп параметр, работает на мобильных телефонах и планшетах
-    touchThrehold:5, // Слайд делится на 5 частей и нам нужно просвайпить эту часть, что бы слайдер переключился
+    touchThrehold:10, // Слайд делится на 5 частей и нам нужно просвайпить эту часть, что бы слайдер переключился
     toucheMove: true, // Включает все возможности для тач устройств
     waitForAnimate: false, // Возможность быстрого переключения слайдов в ручном режиме
     centerMode:false, // Центрирует активный слайд
@@ -26,20 +26,30 @@ $(document).ready(function(){
     vertical: false, // Вертикальное расположение слайдера
     asNavFor:"", // Опция для связки двух слайдеров, к примеру большого и маленького, в кавычках указываем класс слайдера = "small", слайдов должно быть одинаковое количество и нумерация
     responsive:[  //Позволяет менять свойсва на разных брейк поинтах
-        {
-          breakpoint:768, // Поведение слайдера на разрешении 768рх
-          settings:{
-            slidesToShow:1,
-            slidesToScroll:1,
+          {
+            breakpoint:1000, // Поведение слайдера на разрешении 768рх
+            settings:{
+              slidesToShow:1,
+              slidesToScroll:1,
+            }
           }
-        },{
-          breakpoint:576, // Поведение слайдера на разрешении 576рх
-          settings:{
-            slidesToShow:1,
-            slidesToScroll:1,
-          }
-        }
     ],
-    mobileFirst: false, // Поменяет значение с max-width на min-width и позволит выводить 2 слайде при разрешениях 768 и больше, нужно указать slidesToShow:2 в брейк поинте 768
+    mobileFirst: false,
   });
 });
+
+
+
+// ,{
+//   breakpoint:768, // Поведение слайдера на разрешении 768рх
+//   settings:{
+//     slidesToShow:1,
+//     slidesToScroll:1,
+//   }
+// },{
+//   breakpoint:576, // Поведение слайдера на разрешении 576рх
+//   settings:{
+//     slidesToShow:1,
+//     slidesToScroll:1,
+//   }
+// }
