@@ -1,0 +1,51 @@
+.subscription{
+  padding: 90px 60px;
+  background-color:#FEE6E0;
+  margin: 0 auto;
+  text-align: center;
+  background: #FEE6E0 url('../../../i/icons/way.svg') no-repeat center center;
+  margin-bottom: 80px;
+  &__cover{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__form{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__input{
+    display: block;
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 30px;
+    background-color:#fff;
+    border-radius: 5px;
+    color: $brown;
+    font-size: 1rem;
+    outline: none;
+  }
+  &__input::placeholder{
+    color: $brown;
+    font-size: 1rem;
+  }
+  &__btn {
+    display: block;
+    padding: 20px;
+    font-size: 1rem;
+    color:#fff;
+    background-color: $orange;
+    border-radius: 5px;
+  }
+  // &__info{
+  //   position: relative;
+  // }
+  // &__info::before{
+  //   content:url('../../../i/icons/plane.svg');
+  //   top: 50px;
+  //   left: -180px;
+  //   position: absolute;
+  // }
+}

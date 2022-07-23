@@ -1,3 +1,6 @@
+.reviews{
+  margin-bottom: 80px;
+}
 .slide-item{
   max-width: 500px;
   width: 100%;
@@ -112,6 +115,9 @@
 .slider{
   position: relative;
   padding: 0px 60px;
+  // max-width: 900px;
+  // width: 100%;
+  // margin: 0 auto;
 }
 .slider .slick-arrow{
   position: absolute;
@@ -143,16 +149,18 @@
 }
 /* Активная точка */
 .slider .slick-dots li.slick-active button{
-  background-color: transparent;
-  border: 1px solid $orange;
+  background-color: $orange;
+  border-radius:50%;
+
 }
 /* Элемент точки */
 .slider .slick-dots li button{
   font-size: 0;
   width: 15px;
   height: 15px;
-  background-color: $orange;
   border-radius:50%;
+  background-color: transparent;
+  border: 1px solid $orange;
 }
 
 .slide-item{

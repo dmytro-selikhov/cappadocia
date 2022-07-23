@@ -1,0 +1,113 @@
+.footer{
+  &__cover{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__left{
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  &__info{
+    max-width: 220px;
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+  }
+  &__info p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: $brown;
+    margin-bottom: 20px;
+  }
+  &__info a{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: $brown;
+    margin-bottom: 15px;
+  }
+  &__info a:hover{
+    color: $orange;
+  }
+  &__bottom{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__bottom a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $brown;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+  }
+  &__bottom a:hover{
+    color: $orange;
+  }
+  &__bottom p{
+    color: $brown;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+  }
+}
+
+.footer-logo{
+  margin-bottom: 20px;
+  &__logo{
+    display: block;
+  }
+  &__img{
+    display: block;
+  }
+}
+.social{
+  padding: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: start;
+  // margin-bottom: 40px;
+  a{
+    display: block;
+    position: relative;
+  }
+  &__facebook::before{
+    content: url('../../../i/icons/facebook.svg');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+  }
+  &__instagram::before{
+    content: url('../../../i/icons/inst.svg');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 60px;
+  }
+  &__viber::before{
+    content: url('../../../i/icons/viber.svg');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 120px;
+  }
+}
