@@ -5,11 +5,11 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   min-height: 100vh; /* You must set a specified height */
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   &__box{
     background: rgba(99, 81, 101, 0.2);
     width: 100%;
-    margin-bottom: 180px;
+    margin-bottom: 40px;
   }
   &__container{
     padding: 25px;
@@ -26,14 +26,14 @@
   &__title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 7rem;
-    line-height: 8rem;
+    font-size: 2rem;
+    line-height: 3rem;
     color: $orange;
   }
   &__text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 19px;
     line-height: 33px;
     color: $brown;
   }

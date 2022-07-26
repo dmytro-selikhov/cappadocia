@@ -1,10 +1,10 @@
 .subscription{
-  padding: 90px 60px;
+  padding: 30px 0px;
   background-color:#FEE6E0;
   margin: 0 auto;
   text-align: center;
   background: #FEE6E0 url('../../../i/icons/way.svg') no-repeat center center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   &__cover{
     max-width: 1000px;
     width: 100%;
@@ -13,6 +13,7 @@
   &__form{
     max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
   }
@@ -26,6 +27,8 @@
     color: $brown;
     font-size: 1rem;
     outline: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   &__input::placeholder{
     color: $brown;
@@ -33,11 +36,14 @@
   }
   &__btn {
     display: block;
+    max-width: 610px;
+    width: 100%;
     padding: 20px;
     font-size: 1rem;
     color:#fff;
     background-color: $orange;
     border-radius: 5px;
+    margin: 0 auto;
   }
   // &__info{
   //   position: relative;

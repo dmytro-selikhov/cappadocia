@@ -59,18 +59,20 @@ nav,footer,header,aside{display: block;}
   font-family: 'Bad Script';
   font-style: italic;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 4rem;
   color: $orange;
   margin-bottom: 16px;
+  text-align: center;
 }
 .subtitle{
   margin-bottom: 30px;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
   color: $brown;
+  text-align: center;
 }
 .special-gallery{
   max-width: 500px;
@@ -78,4 +80,7 @@ nav,footer,header,aside{display: block;}
   // position: relative;
   // top: 0;
   // left: 0;
+}
+.cover{
+  padding: 20px;
 }
