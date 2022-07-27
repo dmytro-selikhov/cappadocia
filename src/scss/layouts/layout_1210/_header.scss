@@ -6,6 +6,7 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   min-height: 100vh; /* You must set a specified height */
   margin-bottom: 100px;
+
   &__box{
     // background: rgba(99, 81, 101, 0.2);
     width: 100%;
@@ -29,12 +30,13 @@
     font-size: 7rem;
     line-height: 8rem;
     color: $orange;
+    margin-bottom: 30px;
   }
   &__text{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 28px;
-    line-height: 33px;
+    line-height: 40px;
     color: $brown;
   }
 }
@@ -64,3 +66,8 @@
   }
 }
 
+.wrapper .header__info{
+  padding-top: 220px;
+  max-width: 1000px;
+  width: 100%;
+}

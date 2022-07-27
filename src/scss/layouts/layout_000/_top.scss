@@ -25,9 +25,17 @@
   }
   &__box{
     padding: 10px;
-    // overflow: hidden;
-    // height: 120px;
-    // transition: height 5s ease 0s;
+    overflow: hidden;
+    height: 120px;
+    transition-property: height;
+    transition-duration: 0.5s;
+  }
+  &__box:hover{
+    -moz-transition: height 1s;
+    -webkit-transition: height 1s;
+    -o-transition: heightl 1s;
+    transition: height 1s;
+    padding: 10px;
 
   }
   &__img{
@@ -83,7 +91,7 @@
     right: -16px;
   }
   &__link:hover{
-    text-decoration: underline;
+    // text-decoration: underline;
   }
   &__position{
     font-family: 'Montserrat', sans-serif;
@@ -109,6 +117,8 @@
   }
   &__list{
     margin-bottom: 30px;
+    // height: 20px;
+    // overflow: hidden;
   }
   &__btn{
     font-family: 'Montserrat';
@@ -120,21 +130,13 @@
     padding: 15px 35px;
     background-color: $orange;
     border-radius: 5px;
-    display: block;
+    // display: block;
     margin: 0 auto;
     cursor: pointer;
     margin-bottom: 10px;
   }
   &__btn:hover{
-    text-decoration: underline;
+    position: relative;
+    top:2px;
   }
 }
-
-// .item:last-child{
-//   margin-right: 0;
-// }
-// .item__box:hover{
-//   height: auto;
-//   transition: all 3s ease 0.5s;
-//   display: inline-block;
-// }
