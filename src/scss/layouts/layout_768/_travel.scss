@@ -1,0 +1,55 @@
+.travel{
+  margin-bottom: 80px;
+  &__cover{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__left{
+    max-width:400px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 25px;
+  }
+  &__right{
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+  }
+  &__right img {
+    width: 100%;
+  }
+
+}
+
+.steps{
+  &__item{
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+    
+  }
+  &__number{
+    color: $orange;
+    font-family: 'Bad Script';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    margin-right: 20px;
+
+  }
+}
+.travel__left .title{
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.travel__left .subtitle{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

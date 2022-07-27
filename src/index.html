@@ -10,22 +10,37 @@
   </head>
   <body>
 <header class="header">
+
 <div class="header__box">
   <div class="header__container wrapper">
-    <div class="header__logo logo">
-      <a href="#" class="logo__link"><img class="logo__img" src="i/logo.svg" alt="logo"></a>
-    </div>
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">Программы туров</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Цены</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Вопросы</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-        </ul>
+    <nav class="navbar header__nav nav">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="header__logo logo">
+            <a href="#" class="logo__link logo" id="logo"><img class="logo__img" src="i/logo.svg" alt="logo"></a>
+          </div>
+          <ul class="menu nav__list" id="menu">
+            <li class="nav__item"><a class="nav__link" href="#top">Программы туров</a></li>
+            <li class="nav__item"><a class="nav__link" href="#price">Цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="#reviwes">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#question">Вопросы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <div class="popup" id="popup"></div>
   </div>
 </div>
+
 
 <div class="wrapper">
     <div class="header__info">
@@ -36,9 +51,9 @@
 
 </header>
 
-<section class="top">
+<section class="top" id="top">
   <div class="wrapper">
-    <div class="info">
+    <div id="price" class="info">
       <h2 class="title">Самые популярные туры</h2>
       <p class="subtitle">ТОП — лучших предложений для выходных</p>
     </div>
@@ -197,7 +212,7 @@
       </div>
 </section>
 
-<section class="reviews">
+<section id="reviwes"  class="reviews">
   <div class="wrapper">
 
         <div class="info">
@@ -335,7 +350,7 @@
 
 </section>
 
-<section class="subscription">
+<section id="question"  class="subscription">
   <div class="wrapper">
     
     <div class="info subscription__info">
@@ -365,7 +380,7 @@
 
     <div class="footer__cover">
 
-      <address class="footer__left">
+      <address id="contacts" class="footer__left">
         <div class="footer__info">
           <p class="footer__address">50400 <br> ул. Ургуп-Каппадокия</p>
           <p class="footer__time">Ежедневно <br> с 10:00 до 22:00</p>
@@ -406,10 +421,10 @@
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/mansory-layout.js"></script>
-    <script src="js/masory.js"></script> -->
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/top_btn.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
