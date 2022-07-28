@@ -11,32 +11,16 @@
 .item{
   max-width: 500px;
   width: 100%;
+  height: auto;
   box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   margin-bottom: 15px;
-  // margin-right: 15px;
-  // overflow: hidden;
-  // height: 400px;
-  // transition: height 5s ease 0s;
-  // display: inline-block;
   &__cover{
     max-width: 500px;
     width: 100%;
   }
   &__box{
     padding: 10px;
-    overflow: hidden;
-    height: 120px;
-    transition-property: height;
-    transition-duration: 0.5s;
-  }
-  &__box:hover{
-    -moz-transition: height 1s;
-    -webkit-transition: height 1s;
-    -o-transition: heightl 1s;
-    transition: height 1s;
-    padding: 10px;
-
   }
   &__img{
     width: 100%;
@@ -80,18 +64,10 @@
     line-height: 1.4rem;
     position: relative;
     margin-bottom: 20px;
-  }
-  &__link::after{
-    content: url('../../../i/arrow-down.svg');
-    display: block;
-    width: 12px;
-    height: 7px;
-    position: absolute;
-    top: 0px;
-    right: -16px;
+    cursor: pointer;
   }
   &__link:hover{
-    // text-decoration: underline;
+    text-decoration: underline;
   }
   &__position{
     font-family: 'Montserrat', sans-serif;
@@ -117,8 +93,6 @@
   }
   &__list{
     margin-bottom: 30px;
-    // height: 20px;
-    // overflow: hidden;
   }
   &__btn{
     font-family: 'Montserrat';
@@ -130,13 +104,20 @@
     padding: 15px 35px;
     background-color: $orange;
     border-radius: 5px;
-    // display: block;
+    display: block;
     margin: 0 auto;
     cursor: pointer;
     margin-bottom: 10px;
   }
   &__btn:hover{
+    text-decoration: none;
     position: relative;
-    top:2px;
+    top: 2px;
   }
 }
+// .toggle-box {display: none;}
+.toggle-button span {transition: all .15s ease-in-out; display: inline-block;}
+.rotate {transform: rotate(180deg);}
+// /*Clear & Animation*/
+// .clear {clear:both; line-height:0px; height:0px; overflow:hidden; font-size:0px; content:''; display:block;}
+// a, button {transition:all 0.2s ease-in-out;}
