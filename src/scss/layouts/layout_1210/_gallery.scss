@@ -67,6 +67,12 @@
   max-width: 320px;
   width: 100%;
 }
-
+.gallery__last{
+  display: flex;
+  // justify-content: space-between;
+  flex-direction: column;
+  // column-gap: 10px;
+  row-gap: 0px;
+}
 
 
